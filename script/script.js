@@ -15,9 +15,9 @@ $(document).ready(function(){
   });
   // Show Laundry
   $(document).ready(function(){
-    $(".laundry").click(function(){
-      $(".laundryDiv").animate({right: '0px'});
-      $(".laundryDiv").toggle();
+    $(".winter").click(function(){
+      $(".winterDiv").animate({right: '0px'});
+      $(".winterDiv").toggle();
     });
   });
   // Show Escape
@@ -36,7 +36,7 @@ $(document).ready(function(){
   });
 //   Hide displayed content again
   $(document).ready(function(){
-    $(".content").click(function(){
+    $(".exit").click(function(){
       $(".content").animate({right: '-250px'});
       $(".content").css("display", "none")
     });
