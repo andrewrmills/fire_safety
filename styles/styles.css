@@ -1,0 +1,79 @@
+body{
+    background-image: url('../img/House.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.marker {
+    transform: perspective(40px) rotateX(20deg) rotateZ(-45deg);
+    transform-origin: 50% 50%;
+    border-radius: 50% 50% 50% 0;
+    padding: 0 3px 3px 0;
+    width: 30px;
+    height: 30px;
+    background: #ed1f34;
+    position: absolute;
+    margin: -2.2em 0 0 -1.3em;
+    -webkit-box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
+    -moz-box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
+  }
+  /* .marker:after {
+    content: '';
+    width: 1em;
+    height: 1em;
+    margin: .6em 0 0 0.5em;
+    background: #ffffff;
+    position: absolute;
+    border-radius: 50%;
+      -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -moz-box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
+    -webkit-box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
+    box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
+  } */
+  @keyframes wiggle {
+    0% { transform: rotate(-45deg); }
+   80% { transform: rotate(-45deg); }
+   85% { transform: rotate(-55deg); }
+   95% { transform: rotate(-35deg); }
+  100% { transform: rotate(-45deg); }
+}
+
+.wiggle {
+  display: inline-block;
+  animation: wiggle 2.5s infinite;
+}
+
+.wiggle:hover {
+  animation: none;
+}
+  .escape{
+    left: 81%;
+    top: 45%;
+  }
+  .kitchen{
+    left: 47%;
+    top: 65%;
+  }
+  .bedroom{
+    left: 21%;
+    top: 63%;
+  }
+  .laundry{
+    left: 38%;
+    top: 50%;
+  }
+  .smokeAlarms{
+    left: 55%;
+    top: 40%;
+  }
+  .content{
+    height: 98%;
+    width: 400px;
+    background-color: #ffffff;
+    position: absolute;
+    right:-250px;
+    opacity: 0.8;;
+    display: none;
+  }
