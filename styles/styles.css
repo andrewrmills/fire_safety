@@ -96,7 +96,7 @@ body{
     float: right;
     margin: 10px;
   }
-  .content a {
+  .escapeLink a {
     text-decoration: none;
     background-color: #F1C84A;
     color: #0a0a4e;
@@ -105,7 +105,16 @@ body{
     border-radius: 5px;
     margin: 20px;
 }
-.content a:hover {
+.escapLink a:hover {
     background-color:#0a0a4e;
     color: #F1C84A;
+}
+.escapeLink{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.kitchenDiv a{
+    text-decoration: none;
+    font-weight: bold;
 }
