@@ -126,7 +126,7 @@ body{
 }
 @keyframes lawnmowerU{
   0% {
-    bottom: 0;
+    bottom: -100px;
   }
   50% { 
     bottom: 100%;
