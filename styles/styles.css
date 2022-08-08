@@ -121,11 +121,14 @@ body{
 .lawnmowerUp{
   position: absolute;
   left: 50px;
-  animation: lawnmowerU 50s linear;
+  animation: lawnmowerU 100s linear infinite;
 }
 @keyframes lawnmowerU{
   0% {
     bottom: 0;
+  }
+  50% { 
+    bottom: 100%;
   }
   100% { 
     bottom: 100%;
@@ -135,12 +138,15 @@ body{
   position: absolute;
   left: 100px;
   top: -150px;
-  animation: lawnmowerD 50s linear;
+  animation: lawnmowerD 100s linear infinite;
   animation-delay: 50s;
 }
 @keyframes lawnmowerD{
   0% {
     top: -100px;
+  }
+  50% {
+    top: 100%;
   }
   100% {
     top: 100%;
