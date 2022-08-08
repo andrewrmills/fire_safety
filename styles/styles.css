@@ -127,9 +127,8 @@ body{
   0% {
     bottom: 0;
   }
-  100% {
+  100% { 
     bottom: 100%;
-    display: none;
   }
 }
 .lawnmowerDown{
