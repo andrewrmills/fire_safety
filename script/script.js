@@ -34,10 +34,14 @@ $(document).ready(function(){
       $(".smokeAlarmsDiv").toggle();
     });
   });
-//   Hide displayed content again
+  //   Hide displayed content again
   $(document).ready(function(){
     $(".exit").click(function(){
       $(".content").animate({right: '-250px'});
       $(".content").css("display", "none")
     });
   });
+  // Removes lawnmower after animation
+  $('.lawnmowerUp').bind(
+    'animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', 
+    function(e) { $(this).remove(); });

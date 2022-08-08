@@ -118,3 +118,32 @@ body{
     text-decoration: none;
     font-weight: bold;
 }
+.lawnmowerUp{
+  position: absolute;
+  left: 50px;
+  animation: lawnmowerU 50s linear;
+}
+@keyframes lawnmowerU{
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100%;
+    display: none;
+  }
+}
+.lawnmowerDown{
+  position: absolute;
+  left: 100px;
+  top: -150px;
+  animation: lawnmowerD 50s linear;
+  animation-delay: 50s;
+}
+@keyframes lawnmowerD{
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 100%;
+  }
+}
