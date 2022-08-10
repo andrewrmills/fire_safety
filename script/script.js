@@ -34,9 +34,16 @@ $(document).ready(function(){
       $(".smokeAlarmsDiv").toggle();
     });
   });
+  //Show BBQ
+  $(document).ready(function(){
+    $(".bbq").click(function(){
+      $(".bbqDiv").animate({right: '0px'});
+      $(".bbqDiv").toggle();
+    });
+  });
   //   Hide displayed content again
   $(document).ready(function(){
-    $(".exit").click(function(){
+    $(".contentHead").click(function(){
       $(".content").animate({right: '-250px'});
       $(".content").css("display", "none")
     });

@@ -68,7 +68,11 @@ body{
   .smokeAlarms{
     left: 55%;
     top: 40%;
-  }  
+  }
+  .bbq{
+    left: 65%;
+    top: 75%;
+  }    
   .content{
     height: 90%;
     width: 600px;
@@ -94,7 +98,6 @@ body{
     border-radius: 10px;
   }
   .exit{
-    float: right;
     margin: 10px;
     cursor: pointer;
   }
@@ -103,6 +106,8 @@ body{
     font-weight: bold;
 }
 .contentHead{
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid black;
 }
 .contentCredit{
@@ -168,3 +173,88 @@ body{
     top: 100%;
   }
 }
+/* Smoke animation */
+.smoke ul{
+  position: absolute;
+  top: 63%;
+  left: 60%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+}
+.smoke li{
+  position: absolute;
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background: #262626;
+  border-radius: 50%;
+  opacity: 0;
+}
+.smoke li:nth-child(even){
+  animation: smokeEven 2.8s linear infinite;
+}
+.smoke li:nth-child(odd){
+  animation: smokeOdd 2.8s linear infinite;
+}
+@keyframes smokeEven{
+  0% { 
+    transform: translate(0,0) scale(1);
+    opacity: 1;
+    filter: blur(5px);
+  }
+  100% { 
+    transform: translate(50px,-150px) scale(3);
+    opacity: 0;
+    filter: blur(10px);
+  }
+}
+@keyframes smokeOdd{
+  0% { 
+    transform: translate(0,0) scale(1);
+    opacity: 1;
+    filter: blur(5px);
+  }
+  100% { 
+    transform: translate(-50px,-150px) scale(3);
+    opacity: 0;
+    filter: blur(10px);
+  }
+}
+.smoke li:nth-child(1){
+  animation-delay: 0s;
+}
+.smoke li:nth-child(2){
+  animation-delay: .4s;
+}
+.smoke li:nth-child(3){
+  animation-delay: .8s;
+}
+.smoke li:nth-child(4){
+  animation-delay: 1.2s;
+}
+.smoke li:nth-child(5){
+  animation-delay: 1.6ss;
+}
+.smoke li:nth-child(6){
+  animation-delay: 2s;
+}
+.smoke li:nth-child(7){
+  animation-delay: 2.4s;
+}
+.smoke li:nth-child(8){
+  animation-delay: 2.8s;
+}
+.smoke li:nth-child(9){
+  animation-delay: 1.6s;
+}
+.smoke li:nth-child(10){
+  animation-delay: 1.8s;
+}
+.smoke li:nth-child(11){
+  animation-delay: 2.2s;
+}
+.smoke li:nth-child(12){
+  animation-delay: 2.6s;
+}
+
