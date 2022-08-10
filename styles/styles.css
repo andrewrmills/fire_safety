@@ -96,9 +96,21 @@ body{
   .exit{
     float: right;
     margin: 10px;
+    cursor: pointer;
   }
-  .escapeLink a {
+  .content a{
     text-decoration: none;
+    font-weight: bold;
+}
+.contentHead{
+  border-bottom: 1px solid black;
+}
+.contentCredit{
+  margin-top: 50px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+  .escapeLink a {
     background-color: #F1C84A;
     color: #0a0a4e;
     padding: 1rem 1.5rem;
@@ -106,7 +118,7 @@ body{
     border-radius: 5px;
     margin: 20px;
 }
-.escapLink a:hover {
+.escapeLink a:hover {
     background-color:#0a0a4e;
     color: #F1C84A;
 }
@@ -115,9 +127,12 @@ body{
     flex-direction: row;
     justify-content: center;
 }
-.kitchenDiv a{
-    text-decoration: none;
-    font-weight: bold;
+.thermal p{
+  padding-bottom: 20px;
+}
+.thermal img{
+  float: right;
+  padding-left: 20px;
 }
 .lawnmowerUp{
   position: absolute;
