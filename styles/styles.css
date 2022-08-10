@@ -19,21 +19,17 @@ body{
     -moz-box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
     box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
   }
-  /* .marker:after {
-    content: '';
-    width: 1em;
-    height: 1em;
-    margin: .6em 0 0 0.5em;
-    background: #ffffff;
+  .toolTip{
     position: absolute;
-    border-radius: 50%;
-      -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    -moz-box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
-    -webkit-box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
-    box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
-  } */
+    background: #e4e4e4;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+  }
   @keyframes wiggle {
     0% { transform: rotate(-45deg); }
    80% { transform: rotate(-45deg); }
@@ -53,25 +49,49 @@ body{
     left: 81%;
     top: 45%;
   }
+  .escapeToolTip{
+    left: 78.5%;
+    top: 35%;
+  }
   .kitchen{
     left: 47%;
     top: 65%;
+  }
+  .kitchenToolTip{
+    left: 45%;
+    top: 55%;
   }
   .bedroom{
     left: 21%;
     top: 63%;
   }
+  .bedroomToolTip{
+    left: 19%;
+    top: 53%;
+  }
   .winter{
     left: 38%;
     top: 50%;
+  }
+  .winterToolTip{
+    left: 34%;
+    top: 40%;
   }
   .smokeAlarms{
     left: 55%;
     top: 40%;
   }
+  .smokeAlarmsToolTip{
+    left: 52%;
+    top: 30%;
+  }
   .bbq{
     left: 65%;
     top: 75%;
+  }
+  .bbqToolTip{
+    left: 63.5%;
+    top: 65%;
   }    
   .content{
     height: 90%;
