@@ -159,6 +159,10 @@ body{
   float: right;
   padding-left: 20px;
 }
+.smokeAlarmPlan {
+  width: 550px;
+  padding-left: 25px;;
+}
 /* Lawnmower animation */
 .lawnmowerUp{
   position: absolute;
