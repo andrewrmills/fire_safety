@@ -1,7 +1,6 @@
 body{
-    background-image: url('../img/House.png');
+    background: url('../img/House.png') no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
@@ -47,51 +46,51 @@ body{
 }
   .escape{
     left: 81%;
-    top: 45%;
+    top: 35%;
   }
   .escapeToolTip{
     left: 78.5%;
-    top: 35%;
+    top: 25%;
   }
   .kitchen{
     left: 47%;
-    top: 65%;
+    top: 55%;
   }
   .kitchenToolTip{
     left: 45%;
-    top: 55%;
+    top: 45%;
   }
   .bedroom{
     left: 21%;
-    top: 63%;
+    top: 53%;
   }
   .bedroomToolTip{
     left: 19%;
-    top: 53%;
+    top: 43%;
   }
   .winter{
     left: 38%;
-    top: 50%;
+    top: 40%;
   }
   .winterToolTip{
     left: 34%;
-    top: 40%;
+    top: 30%;
   }
   .smokeAlarms{
     left: 55%;
-    top: 40%;
+    top: 35%;
   }
   .smokeAlarmsToolTip{
     left: 52%;
-    top: 30%;
+    top: 25%;
   }
   .bbq{
     left: 65%;
-    top: 75%;
+    top: 65%;
   }
   .bbqToolTip{
     left: 63.5%;
-    top: 65%;
+    top: 55%;
   }    
   .content{
     height: 90%;
@@ -166,7 +165,8 @@ body{
 /* Lawnmower animation */
 .lawnmowerUp{
   position: absolute;
-  left: 50px;
+  height: 15%;
+  left: 4%;
   animation: lawnmowerU 100s linear infinite;
 }
 @keyframes lawnmowerU{
@@ -182,8 +182,9 @@ body{
 }
 .lawnmowerDown{
   position: absolute;
-  left: 100px;
-  top: -130px;
+  height: 15%;;
+  left: 6%;
+  top: -150px;
   animation: lawnmowerD 100s linear infinite;
   animation-delay: 50s;
 }
@@ -201,8 +202,9 @@ body{
 /* Red car animation */
 .redCar{
   position: absolute;
+  height: 22%;
   right: 0;
-  top: -200px;
+  top: -220px;
   animation: carAnimation 60s linear infinite;
   animation-delay: 5s;
 }
@@ -220,7 +222,7 @@ body{
 /* Smoke animation */
 .smoke ul{
   position: absolute;
-  top: 63%;
+  top: 55%;
   left: 60%;
   transform: translateX(-50%);
   margin: 0;
