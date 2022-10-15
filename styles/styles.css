@@ -9,8 +9,8 @@ body{
     transform-origin: 50% 50%;
     border-radius: 50% 50% 50% 0;
     padding: 0 3px 3px 0;
-    width: 30px;
-    height: 30px;
+    width: 1.5%;
+    height: 3%;
     background: #ed1f34;
     position: absolute;
     margin: -2.2em 0 0 -1.3em;
@@ -95,6 +95,7 @@ body{
   .content{
     height: 90%;
     width: 600px;
+    max-width: 90%;
     background-color: #ffffff;
     position: absolute;
     right:-250px;
